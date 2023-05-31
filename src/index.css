@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 200vh;
 }
 
 code {
@@ -12,6 +13,88 @@ code {
     monospace;
 }
 
-h1{
-  color: red;
+nav{
+  color: rgb(227, 161, 5);
+  display: flex;
+ justify-content: center;
+ background: #d0cdcd;
+ cursor: pointer;
+}
+
+nav ul{
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+nav li:hover{
+  text-decoration: underline #000;
+  transform: scale(1.2)
+}
+
+.copyright{
+  color: #12d;
+  font-size: 20px;
+}
+.Login{
+  width: 25rem;
+  height: 25rem;
+  box-shadow: 0px 10px 20px #999;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rem;
+  border-radius: 2rem;
+  gap: 10px;
+}
+
+.Login form{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea{
+  width: 100%;
+  background-color: #dad7d0;
+  border: none;
+  padding: 0.75rem;
+  
+  border-radius: 0.72rem;
+} 
+input{
+  border-bottom: 1px solid #000;
+
+}
+.values{
+  text-align: center;
+}
+textarea{
+  width: 100%;
+  border-left: 4px solid #222;
+  resize: none;
+}
+input:focus,
+textarea:focus{
+  outline: none;
+}
+
+button{
+  position: absolute;
+  bottom:1.1rem;
+  width:10rem;
+  padding: 0.71rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background: blue;
+  color: #fff;
+  transform: translate(-50%);
+  left: 50%;
+
 }
